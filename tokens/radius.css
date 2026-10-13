@@ -1,0 +1,21 @@
+:root{
+  /* The mark is built from sheared, flat-cut planes — geometry stays crisp.
+     Radii are deliberately small; nothing in the brand is pill-soft except
+     status chips. */
+  --radius-none:0;
+  --radius-xs:2px;
+  --radius-sm:4px;
+  --radius-md:6px;
+  --radius-lg:10px;
+  --radius-xl:16px;
+  --radius-pill:999px;
+
+  --radius-control:6px;
+  --radius-card:10px;
+  --radius-surface:16px;
+
+  /* Bevel motif — the 22° shear taken from the logo's planes */
+  --bevel-angle:22deg; /* @kind other */
+  --bevel-cut:14px; /* @kind other */
+  --bevel-clip:polygon(0 0,100% 0,100% calc(100% - 14px),calc(100% - 14px) 100%,0 100%); /* @kind other */
+}

@@ -1,0 +1,15 @@
+<!-- @dsCard group="Components" viewport="700x200" name="Navigation — Tabs" subtitle="Underline and segmented variants" -->
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><title>Navigation</title><link rel="stylesheet" href="../../styles.css"><style>body{padding:20px;background:var(--surface-page)}.stack{display:flex;flex-direction:column;gap:32px}</style></head>
+<body><div id="root"></div><script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<script type="text/babel">
+const {Tabs}=window.GrupoE2DesignSystem_a36653;
+const items=[{id:'a',label:'Resumen',icon:'layout-dashboard'},{id:'b',label:'Procesos',count:12},{id:'c',label:'Entregables'},{id:'d',label:'Facturación',disabled:true}];
+function Demo(){const[a,setA]=React.useState('a');const[b,setB]=React.useState('b');return(<div className="stack">
+  <Tabs items={items} value={a} onChange={setA}/>
+  <Tabs items={items.slice(0,3)} value={b} onChange={setB} variant="segmented" style={{alignSelf:'flex-start'}}/>
+</div>);}
+ReactDOM.createRoot(document.getElementById('root')).render(<Demo/>);
+</script></body></html>

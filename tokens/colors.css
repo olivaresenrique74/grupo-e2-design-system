@@ -1,0 +1,114 @@
+:root{
+  /* ── Brand base — Manual de Marca, sec. 07 ───────────────── */
+  --e2-navy:#1F3E6F;          /* Azul Marino  RGB 31,62,111  · PANTONE ≈ 534 C */
+  --e2-orange:#FF751F;        /* Naranja      RGB 255,117,31 · PANTONE ≈ 1585 C */
+
+  /* Navy ramp (derived from --e2-navy) */
+  --navy-900:#0F1F38;
+  --navy-800:#162C50;
+  --navy-700:#1F3E6F;
+  --navy-600:#2C5391;
+  --navy-500:#3E6DB4;
+  --navy-400:#6A90C6;
+  --navy-300:#8FA8CC;
+  --navy-200:#B9CADF;
+  --navy-100:#D6E0EE;
+  --navy-50:#EEF3F9;
+
+  /* Orange ramp (derived from --e2-orange) */
+  --orange-700:#B84B08;
+  --orange-600:#E85D0A;
+  --orange-500:#FF751F;
+  --orange-400:#FF9047;
+  --orange-300:#FFA96E;
+  --orange-200:#FFCBA5;
+  --orange-100:#FFE3CE;
+  --orange-50:#FFF4EC;
+
+  /* Cool neutrals — the grey axis is very slightly blue so it sits with the navy */
+  --gray-950:#0B0F16;
+  --gray-900:#151A22;
+  --gray-800:#232A34;
+  --gray-700:#3A424E;
+  --gray-600:#5A6472;
+  --gray-500:#7C8695;
+  --gray-400:#A4ADBA;
+  --gray-300:#C7CDD6;
+  --gray-200:#E1E5EB;
+  --gray-100:#EFF1F5;
+  --gray-50:#F7F8FA;
+  --white:#FFFFFF;
+  --black:#000000;
+
+  /* Semantic status */
+  --success-600:#15653D;
+  --success-500:#1E7B4D;
+  --success-50:#E9F5EE;
+  --warning-600:#965C05;
+  --warning-500:#B8730A;
+  --warning-50:#FDF3E2;
+  --danger-600:#9E2B20;
+  --danger-500:#C0392B;
+  --danger-50:#FBEBE9;
+  --info-500:#2C5391;
+  --info-50:#EEF3F9;
+
+  /* ── Semantic aliases — always prefer these in product code ── */
+  --text-strong:var(--navy-900);
+  --text-body:var(--gray-700);
+  --text-muted:var(--gray-500);
+  --text-inverse:var(--white);
+  --text-brand:var(--e2-navy);
+  --text-accent:var(--orange-600);
+  --text-link:var(--e2-navy);
+  --text-link-hover:var(--orange-600);
+
+  --surface-page:var(--white);
+  --surface-subtle:var(--gray-50);
+  --surface-card:var(--white);
+  --surface-sunken:var(--gray-100);
+  --surface-brand:var(--e2-navy);
+  --surface-brand-strong:var(--navy-900);
+  --surface-brand-soft:var(--navy-50);
+  --surface-accent:var(--e2-orange);
+  --surface-accent-soft:var(--orange-50);
+  --surface-inverse:var(--navy-900);
+
+  --border-subtle:var(--gray-200);
+  --border-default:var(--gray-300);
+  --border-strong:var(--gray-400);
+  --border-brand:var(--e2-navy);
+  --border-accent:var(--e2-orange);
+  --border-inverse:rgba(255,255,255,.22);
+
+  --action-primary-bg:var(--e2-navy);
+  --action-primary-bg-hover:var(--navy-800);
+  --action-primary-bg-active:var(--navy-900);
+  --action-primary-fg:var(--white);
+  --action-accent-bg:var(--e2-orange);
+  --action-accent-bg-hover:var(--orange-600);
+  --action-accent-bg-active:var(--orange-700);
+  --action-accent-fg:var(--white);
+  --action-disabled-bg:var(--gray-200);
+  --action-disabled-fg:var(--gray-400);
+
+  --focus-ring:var(--e2-orange);
+  --focus-ring-width:2px; /* @kind other */
+  --focus-ring-offset:2px; /* @kind other */
+}
+
+/* Dark / on-navy scope: apply to any section sitting on the brand blue. */
+.e2-on-dark{
+  --text-strong:var(--white);
+  --text-body:var(--navy-100);
+  --text-muted:var(--navy-300);
+  --text-link:var(--white);
+  --text-link-hover:var(--orange-300);
+  --surface-page:var(--e2-navy);
+  --surface-card:var(--navy-800);
+  --surface-subtle:var(--navy-800);
+  --surface-sunken:var(--navy-900);
+  --border-subtle:rgba(255,255,255,.14);
+  --border-default:rgba(255,255,255,.24);
+  --border-strong:rgba(255,255,255,.4);
+}
