@@ -1,14 +1,17 @@
 <!doctype html>
 <html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Grupo E2 Design System</title>
+<link rel="stylesheet" href="styles.css">
 <style>
-body{font-family:system-ui,sans-serif;max-width:900px;margin:0 auto;padding:48px 16px;color:#14213d;line-height:1.5}
-h1{margin-bottom:4px} p.sub{color:#555;margin-top:0}
-h2{margin-top:40px;border-bottom:2px solid #f26b1d;padding-bottom:6px}
+body{font-family:var(--font-body);max-width:900px;margin:0 auto;padding:48px 16px;color:var(--text-body);background:var(--white,#fff);line-height:1.5}
+h1,h2,h3{font-family:var(--font-display);color:var(--text-strong)}
+h1{margin-bottom:4px} p.sub{color:var(--text-muted);margin-top:0}
+h2{margin-top:40px;border-bottom:2px solid var(--e2-orange);padding-bottom:6px}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:24px}
 ul{list-style:none;padding:0;margin:0} li{margin:4px 0}
-a{color:#14213d} a:hover{color:#f26b1d}
-.card{display:block;padding:16px;border:1px solid #ddd;border-radius:8px;text-decoration:none}
+a{color:var(--text-link)} a:hover{color:var(--text-link-hover)}
+.card{display:block;padding:16px;border:1px solid var(--gray-200);border-radius:8px;text-decoration:none}
+.card:hover{border-color:var(--e2-orange)}
 </style></head><body>
 <h1>Grupo E2 Design System</h1>
 <p class="sub">Tokens, guías de marca, componentes y plantillas.</p>
